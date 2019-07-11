@@ -79,7 +79,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    phh_Doze
 
 # FM
 PRODUCT_PACKAGES += \
