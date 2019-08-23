@@ -81,10 +81,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.display.config@1.0
 
-# Doze
-PRODUCT_PACKAGES += \
-    phh_Doze
-
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
