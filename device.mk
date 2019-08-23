@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.target.rc
 
+# Disable HW overlay as default
+PRODUCT_PACKAGES += \
+    10disablehw
+
 # Display
 PRODUCT_PACKAGES += \
     vendor.display.config@1.0
