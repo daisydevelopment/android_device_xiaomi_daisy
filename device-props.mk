@@ -1,3 +1,8 @@
+# ART
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.image-dex2oat-filter=speed
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.hfp.client=1
@@ -90,6 +95,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3=""
 
+# Perf
+    ro.sys.fw.dex2oat_thread_count=8 \
+
+# QTI Performance
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.enable_prefetch=1 \
+    vendor.iop.enable_uxe=1 \
+    vendor.iop.enable_prefetch_ofr=1 \
+    vendor.perf.iop_v3.enable=1 \
+    ro.vendor.at_library=libqti-at.so \
+    persist.vendor.qti.games.gt.prof=1
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
@@ -121,19 +138,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.data_con_rprt=1 \
     persist.radio.calls.on.ims=1
 
-# ART
-PRODUCT_PROPERTY_OVERRIDES += \
-dalvik.vm.dex2oat-filter=speed \
-dalvik.vm.image-dex2oat-filter=speed
-
-# Perf
-ro.sys.fw.dex2oat_thread_count=8 \
-
-# QTI Performance
-PRODUCT_PROPERTY_OVERRIDES += \
-vendor.enable_prefetch=1 \
-vendor.iop.enable_uxe=1 \
-vendor.iop.enable_prefetch_ofr=1 \
-vendor.perf.iop_v3.enable=1 \
-ro.vendor.at_library=libqti-at.so \
-persist.vendor.qti.games.gt.prof=1
